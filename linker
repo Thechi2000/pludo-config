@@ -1,7 +1,10 @@
 {
     "__name__": "Linker",
     "build": "just build",
-    "run": "target/x86_64-unknown-linux-none/release/fold",
+    "run": {
+      "cmd": "target/x86_64-unknown-linux-none/release/fold",
+      "as_alias": true
+    },
     "check": "just check",
     "musl-clean": {
         "cmd": "git clean -f",
