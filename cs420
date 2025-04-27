@@ -1,0 +1,7 @@
+{
+    "__name__": "CS420",
+    "run": {
+        "cmd": "sbt",
+        "dir": "compiler"
+    }
+}
