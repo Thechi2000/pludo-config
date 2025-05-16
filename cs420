@@ -1,7 +1,7 @@
 {
     "__name__": "CS420",
     "run": {
-        "cmd": "sbt",
-        "dir": "compiler"
+        "cmd": "cargo run",
+        "dir": "vm/rust"
     }
 }
