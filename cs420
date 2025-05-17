@@ -12,6 +12,5 @@
     "clippy": {
         "cmd": "cargo clippy",
         "dir": "vm/rust"
-    },
-
+    }
 }
