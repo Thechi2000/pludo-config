@@ -3,5 +3,9 @@
     "run": {
         "cmd": "cargo run",
         "dir": "vm/rust"
-    }
+    },
+    "test": {
+        "cmd": "cargo test",
+        "dir": "vm/rust"
+    } 
 }
