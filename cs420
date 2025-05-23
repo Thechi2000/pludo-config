@@ -1,16 +1,19 @@
 {
-    "__name__": "CS420",
-    "run": {
-        "cmd": "cargo run",
-        "dir": "vm/rust"
-    },
-    "test": {
-        "cmd": "cargo test",
-        "dir": "vm/rust"
-    },
-
-    "clippy": {
-        "cmd": "cargo clippy",
-        "dir": "vm/rust"
-    }
+  "__name__": "CS420",
+  "run": {
+    "cmd": "cargo run",
+    "dir": "vm/rust"
+  },
+  "test": {
+    "cmd": "cargo test",
+    "dir": "vm/rust"
+  },
+  "clippy": {
+    "cmd": "cargo clippy",
+    "dir": "vm/rust"
+  },
+  "vmtest": {
+    "cmd": "shelltest -D VM=../rust/target/release/l3vm *.test",
+    "dir": "vm/test"
+  }
 }
