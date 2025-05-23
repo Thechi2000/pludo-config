@@ -13,7 +13,7 @@
     "dir": "vm/rust"
   },
   "vmtest": {
-    "cmd": "shelltest -D VM=../rust/target/release/l3vm *.test",
+    "cmd": "(cd ../rust && cargo build) && shelltest -D VM=../rust/target/debug/l3vm *.test",
     "dir": "vm/test"
   }
 }
