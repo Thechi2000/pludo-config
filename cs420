@@ -12,6 +12,10 @@
     "cmd": "cargo clippy",
     "dir": "vm/rust"
   },
+  "rvmtest": {
+    "cmd": "(cd ../rust && cargo build -r) && shelltest -D VM=../rust/target/release/l3vm *.test",
+    "dir": "vm/test"
+  },
   "vmtest": {
     "cmd": "(cd ../rust && cargo build) && shelltest -D VM=../rust/target/debug/l3vm *.test",
     "dir": "vm/test"
