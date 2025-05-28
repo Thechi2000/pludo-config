@@ -4,6 +4,10 @@
     "cmd": "cargo run",
     "dir": "vm/rust"
   },
+  "rrun": {
+    "cmd": "time cargo run -r",
+    "dir": "vm/rust"
+  },
   "test": {
     "cmd": "cargo test",
     "dir": "vm/rust"
@@ -13,7 +17,7 @@
     "dir": "vm/rust"
   },
   "rvmtest": {
-    "cmd": "(cd ../rust && cargo build -r) && shelltest -D VM=../rust/target/release/l3vm *.test",
+    "cmd": "(cd ../rust && cargo build -r) && time shelltest -D VM=../rust/target/release/l3vm *.test",
     "dir": "vm/test"
   },
   "vmtest": {
