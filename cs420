@@ -29,7 +29,7 @@
     "dir": "vm/rust"
   },
   "mksubmit": {
-    "cmd": "rm l3vm-rust.zip; 7z a l3vm-rust.zip Cargo.toml src"
+    "cmd": "rm l3vm-rust.zip; 7z a l3vm-rust.zip Cargo.toml src",
     "dir": "vm/rust"
   }
 }
