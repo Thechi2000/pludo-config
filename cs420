@@ -27,5 +27,9 @@
   "flamegraph": {
     "cmd": "CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph --flamechart --freq 50000 --",
     "dir": "vm/rust"
+  },
+  "mksubmit": {
+    "cmd": "rm l3vm-rust.zip; 7z a l3vm-rust.zip Cargo.toml src"
+    "dir": "vm/rust"
   }
 }
