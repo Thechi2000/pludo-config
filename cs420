@@ -23,5 +23,9 @@
   "vmtest": {
     "cmd": "(cd ../rust && cargo build) && shelltest -D VM=../rust/target/debug/l3vm *.test",
     "dir": "vm/test"
+  },
+  "flamegraph": {
+    "cmd": "CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph --flamechart --freq 50000 --",
+    "dir": "vm/rust"
   }
 }
